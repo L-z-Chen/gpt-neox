@@ -183,7 +183,7 @@ class PileSubset(DataDownloader):
 class Pile(DataDownloader):
     name = "pile"
     urls = [
-        f"https://the-eye.eu/public/AI/pile/train/{i:02}.jsonl.zst" for i in range(30)
+        f"https://hf-mirror.com/datasets/monology/pile-uncopyrighted/resolve/main/train/{i:02}.jsonl.zst?download=true" for i in range(30)
     ]
 
 

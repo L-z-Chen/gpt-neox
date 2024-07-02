@@ -30,6 +30,7 @@ def main(input_args=None):
 
     # Extract wandb API key and inject into worker environments
     wandb_token = get_wandb_api_key(neox_args=neox_args)
+    wandb_token = "9533feefe54c8861797f495e7872fa9631fe5a77"
     if wandb_token is not None:
         deepspeed.launcher.runner.EXPORT_ENVS.append("WANDB_API_KEY")
         os.environ["WANDB_API_KEY"] = wandb_token

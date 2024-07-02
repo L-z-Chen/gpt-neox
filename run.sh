@@ -1,0 +1,1 @@
+python3 ./deepy.py train.py -d configs bf16_125M.yml local_setup.yml
